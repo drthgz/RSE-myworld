@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named welcome
+
+# Build rule for target.
+welcome: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 welcome
+.PHONY : welcome
+
+# fast build rule for target.
+welcome/fast:
+	$(MAKE) -f CMakeFiles/welcome.dir/build.make CMakeFiles/welcome.dir/build
+.PHONY : welcome/fast
+
+#=============================================================================
 # Target rules for targets named hello
 
 # Build rule for target.
@@ -150,6 +163,33 @@ script/hello.cpp.s:
 	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/script/hello.cpp.s
 .PHONY : script/hello.cpp.s
 
+script/welcome.o: script/welcome.cpp.o
+
+.PHONY : script/welcome.o
+
+# target to build an object file
+script/welcome.cpp.o:
+	$(MAKE) -f CMakeFiles/welcome.dir/build.make CMakeFiles/welcome.dir/script/welcome.cpp.o
+.PHONY : script/welcome.cpp.o
+
+script/welcome.i: script/welcome.cpp.i
+
+.PHONY : script/welcome.i
+
+# target to preprocess a source file
+script/welcome.cpp.i:
+	$(MAKE) -f CMakeFiles/welcome.dir/build.make CMakeFiles/welcome.dir/script/welcome.cpp.i
+.PHONY : script/welcome.cpp.i
+
+script/welcome.s: script/welcome.cpp.s
+
+.PHONY : script/welcome.s
+
+# target to generate assembly for a file
+script/welcome.cpp.s:
+	$(MAKE) -f CMakeFiles/welcome.dir/build.make CMakeFiles/welcome.dir/script/welcome.cpp.s
+.PHONY : script/welcome.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -158,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... welcome"
 	@echo "... hello"
 	@echo "... script/hello.o"
 	@echo "... script/hello.i"
 	@echo "... script/hello.s"
+	@echo "... script/welcome.o"
+	@echo "... script/welcome.i"
+	@echo "... script/welcome.s"
 .PHONY : help
 
 

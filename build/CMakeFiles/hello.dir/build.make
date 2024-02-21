@@ -107,7 +107,6 @@ libhello.so: /usr/lib/x86_64-linux-gnu/libgazebo_opende_ou.so
 libhello.so: /usr/lib/x86_64-linux-gnu/libgazebo_math.so
 libhello.so: /usr/lib/x86_64-linux-gnu/libgazebo_ccd.so
 libhello.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-libhello.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
 libhello.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
 libhello.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 libhello.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
@@ -131,7 +130,6 @@ libhello.so: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
 libhello.so: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
 libhello.so: /usr/lib/x86_64-linux-gnu/libignition-math2.so
 libhello.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-libhello.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
 libhello.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
 libhello.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 libhello.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so

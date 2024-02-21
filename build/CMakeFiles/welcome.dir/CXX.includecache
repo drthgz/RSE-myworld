@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/robond/Documents/myrobot/script/hello.cpp
+/home/robond/Documents/myrobot/script/welcome.cpp
 gazebo/gazebo.hh
 -
 
@@ -129,7 +129,13 @@ string
 -
 vector
 -
+boost/version.hpp
+-
 boost/uuid/sha1.hpp
+-
+boost/uuid/detail/sha1.hpp
+-
+boost/filesystem.hpp
 -
 iomanip
 -
@@ -4635,6 +4641,8 @@ ignition/math/Angle.hh
 -
 ignition/math/Box.hh
 -
+ignition/math/Color.hh
+-
 ignition/math/Filter.hh
 -
 ignition/math/Frustum.hh
@@ -4716,6 +4724,14 @@ ignition/math/Helpers.hh
 ignition/math/Vector3.hh
 -
 ignition/math/Line3.hh
+-
+
+/usr/include/ignition/math2/ignition/math/Color.hh
+iostream
+-
+ignition/math/Helpers.hh
+-
+ignition/math/Vector3.hh
 -
 
 /usr/include/ignition/math2/ignition/math/Filter.hh
